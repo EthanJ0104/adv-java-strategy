@@ -11,7 +11,7 @@ public class Main {
         //Discount types S for Sale, D for Discount, L for Liquidation
         orders.add(new CustomerOrder("William Walters", 75.34, 'D'));
         orders.add(new CustomerOrder("Susan Smothers", 24.12, 's'));
-        orders.add(new CustomerOrder("Jessica Johnson", 273.93, 'L'));
+        orders.add(new CustomerOrder("Jesica Johnson", 273.93, 'L'));
         orders.add(new CustomerOrder("Richard Ricardo", 171.42, 'D'));
 
         double total = 0;

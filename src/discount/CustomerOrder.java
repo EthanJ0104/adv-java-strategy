@@ -16,7 +16,6 @@ public class CustomerOrder {
         double tempBill;
         switch (discountType) {
             case 'S':
-            case 's':
                 tempBill = billAmount - (billAmount * 0.1);
                 break;
             case 'D':

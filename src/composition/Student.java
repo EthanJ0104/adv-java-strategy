@@ -1,21 +1,20 @@
 package composition;
 
-public class Student extends Address {
+public class Student implements AddressInterface {
 
     private String name;
     private int age;
+    private String streetAddress;
+    private int zipCode;
+    private String state;
+    private String phone;
 
     public Student(String streetAddress, int zipCode, String state, String phone, String name, int age) {
-        super(streetAddress, zipCode, state, phone);
+        this.streetAddress = streetAddress;
+        this.zipCode = zipCode;
+        this.state = state;
+        this.phone = phone;
         this.name = name;
-        this.age = age;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
         this.age = age;
     }
 
@@ -23,7 +22,43 @@ public class Student extends Address {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public int getAge() {
+        return age;
+    }
+
+    public String getStreetAddress() {
+        return streetAddress;
+    }
+
+    public int getZipCode() {
+        return zipCode;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    @Override
+    public String streetAddress() {
+        return null;
+    }
+
+    @Override
+    public int zipCode() {
+        return 0;
+    }
+
+    @Override
+    public String state() {
+        return null;
+    }
+
+    @Override
+    public String phone() {
+        return null;
     }
 }
